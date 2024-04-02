@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            background: linear-gradient(to right, #56CCF2, #2F80ED);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+        }
+        button {
+            background-color: rgb(34, 53, 224);
+            color: rgb(255, 252, 252);
+            border-radius: 10px;
+            padding: 10px 20px;
+            border: none;
+            margin: 20px;
+            margin-top: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px 0px rgb(0, 0, 0);
+            position: absolute;
+        }
+        button:hover {
+            background-color: white; 
+            color: rgb(34, 53, 224);
+            position: relative;
+            top: -10px; 
+            left: -10px; 
+        }
+        button:active {
+            transform: translateY(5px);
+        }
+        #yesButton {
+            position: fixed;
+            top: 70%;
+            left: 43%;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Do you wanna go out with me?</h1>
+    <img src="images/please-cute.gif" alt="please-cute Emoji" width="150"/>
+    <div>
+        <button id="noButton"  onmouseover="moveButton()" onclick="response('No')">No</button>
+        <button id="yesButton" onclick="response('Yes')">Yes</button>
+    </div>
+
+<script type='text/javascript'>
+    function response(answer) {
+        if (answer === 'Yes') {
+            window.location.href = 'yespage.html';
+        } else {""}
+    }
+
+    function moveButton() {
+        var button = document.getElementById('noButton');
+        var maxWidth = window.innerWidth - button.clientWidth;
+        var maxHeight = window.innerHeight - button.clientHeight;
+
+        var randomX = Math.floor(Math.random() * maxWidth);
+        var randomY = Math.floor(Math.random() * maxHeight);
+
+        button.style.left = randomX + 'px';
+        button.style.top = randomY + 'px';
+    }
+</script>
+
+</body>
+</html>
