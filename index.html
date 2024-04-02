@@ -44,56 +44,59 @@
         transform: translateY(5px);
       }
 
-
-      @media (max-width : 500px ) {
-
+      @media (max-width: 500px) {
         body {
-        margin: 0;
-        padding: 0;
-        background-color: rgb(243, 245, 240);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-      }
+          margin: 0;
+          padding: 0;
+          background-color: rgb(243, 245, 240);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          overflow-y: hidden;
+        }
 
-      .container {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        position: relative;
-      }
+        .container {
+          position: relative;
+          width: 100vw;
+          height: 100vh;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          position: relative;
+        }
 
-      .container img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+        .container img {
+          width: 100vw;
+          height: 100vh;
+          object-fit: cover;
+        }
 
-      button {
-        background: none;
-        border: none;
-        cursor: pointer;
-        position: absolute;
-        max-width: 20%;
-        top: 51%;
+        button {
+          cursor: pointer;
+          position: absolute;
+          display: flex;
+          width: 100%;
+          height: 100%;
+          top: 51%;
+          right: 58%;
+        }
+
+        .btn img {
+          width: 55vw;
+          height: 27vh;
+        }
       }
       button:active {
         transform: translateY(5px);
-      }
-
-
       }
     </style>
   </head>
   <body>
     <div class="container">
       <img src="images/ribbon.jpg" alt="Ribbon" />
-      <button onclick="buttonClick()">
+      <button class="btn" onclick="buttonClick()">
         <img src="images/button.png" alt="Button Image" />
       </button>
     </div>

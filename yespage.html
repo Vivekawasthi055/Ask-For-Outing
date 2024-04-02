@@ -1,64 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fix Date</title>
     <style>
-        body {
-            font-family: "Times New Roman", serif;
-            background: linear-gradient(to right, #56CCF2, #2F80ED);
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-        }
-        h1 {
-            font-size: 3em; 
-        }
-        button {
-            background-color: rgb(34, 53, 224);
-            color: rgb(255, 252, 252);
-            border-radius: 10px;
-            padding: 10px 20px;
-            border: none;
-            margin: 20px;
-            margin-top: 5px;
-            box-shadow: 0 4px 8px 0px rgb(0, 0, 0);
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: white; 
-            color: rgb(34, 53, 224);
-            position: relative;
-        }
-        button:active {
-            transform: translateY(5px);
-        }
-    </style>
-</head>
+      body {
+        font-family: "Times New Roman", serif;
+        background: linear-gradient(to right, #56ccf2, #2f80ed);
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      .container {
+        text-align: center;
+      }
+      h1 {
+        font-size: 3em;
+      }
+      button {
+        background-color: rgb(34, 53, 224);
+        color: rgb(255, 252, 252);
+        border-radius: 10px;
+        padding: 10px 20px;
+        border: none;
+        margin: 20px;
+        margin-top: 5px;
+        box-shadow: 0 4px 8px 0px rgb(0, 0, 0);
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: white;
+        color: rgb(34, 53, 224);
+        position: relative;
+      }
+      button:active {
+        transform: translateY(5px);
+      }
 
-<body>
+      @media (max-width: 500px) {
+        h1 {
+          font-size: 2.5em;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
     <div class="container">
-        <h1>Yeeyy! Finally</h1>
-        <img src="images/cute-bear-yes-yes.gif" alt="Happy Emoji" width="150" />
-        <div>
-            <button onclick="openContactDetails()">Lets Fix a Date</button>
-        </div>
+      <h1>Yeeyy! Finally</h1>
+      <img src="images/cute-bear-yes-yes.gif" alt="Happy Emoji" width="150" />
+      <div>
+        <button onclick="openContactDetails()">Lets Fix a Date</button>
+      </div>
     </div>
 
     <script>
-        function openContactDetails() {
-            window.location.href = 'contact.html';
-        }
+      function openContactDetails() {
+        window.location.href = "contact.html";
+      }
     </script>
-    
-</body>
-
+  </body>
 </html>

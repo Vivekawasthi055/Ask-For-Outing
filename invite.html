@@ -12,6 +12,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            width: 100vw;
             height: 100vh;
             margin: 0;
         }
@@ -49,6 +50,45 @@
             top: 70%;
             left: 43%;
         }
+
+
+        @media (max-width : 500px) {
+            h1 {
+            font-size: 6vw;
+        }
+        button {
+            background-color: rgb(34, 53, 224);
+            color: rgb(255, 252, 252);
+            border-radius: 10px;
+            padding: 10px 20px;
+            border: none;
+            margin: 20px;
+            top: 65%;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px 0px rgb(0, 0, 0);
+            position: absolute;
+        }
+        button:hover {
+            background-color: white; 
+            color: rgb(34, 53, 224);
+            position: relative;
+            top: -10px; 
+            left: -10px; 
+        }
+        button:active {
+            transform: translateY(5px);
+        }
+        #yesButton {
+            position: fixed;
+            left: 25%;
+            top: 65%;
+        }
+
+
+        }
+      
+        
     </style>
 </head>
 <body>
